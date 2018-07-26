@@ -7,7 +7,6 @@ body{
     width: 1024px;
     height: 768px;
     display: flex;
-    align-items: center;
     background-image: url(./img/samuel-zeller-242172-unsplash.jpg);
 }
 
@@ -16,45 +15,48 @@ body{
     align-items: center;
     text-align: center;
     width: 35%;
-    opacity: 40%;
-    height: 100vh;
-    overflow: black;    
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .right-box{
+    margin-top: 20%;
     justify-content: center;
     align-items: center;
-    width: 65%;
+    width: 60%;
     text-align: center;
 }
 
 .name{
+    margin: 60px;
     font-family: Roboto;
     font-style: Light;
-    font-size: 42px;
+    font-size: 30px;
     text-align: center;
     color: white;
 }
 
 .picture{
+    margin-top: 30%;
     width: 228px;
     height: 228px;
     background-image: url(./img/27867770_1746012032127377_1332655718833146407_n.jpg);
     align-items: center;
     justify-content: center;
     border-radius: 119px;
+    display: inline-block;
 }
 
 .title{
     margin: 0 0 24px 0;
     font-family: roboto;
-    font-style: thin;
+    font-style: italic;
     font-size: 72px;
     text-align: center;
     color: black;
 }
 
 .text-lorem{
+    margin: 0 20px 0 20px;
     font-family: Roboto;
     font-style: light;
     font-size: mixed;
@@ -63,18 +65,21 @@ body{
 }
 
 .button{
+    margin: 100px;
     font-family: roboto;
-    font-style: thin;
+    font-weight: 200;
     font-size: 22px;
     text-align: center;
     color: white;
-    display: inline-block;
+    align-items: center;
+    justify-content: center;
     background-color: black;
     opacity: 80%;
     border-radius: 20px;
     width: 205px;
     height: 50px;
     border: none;
+    display: inline-block;
 }
 
 .button:hover{
