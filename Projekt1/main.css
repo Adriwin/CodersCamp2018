@@ -15,22 +15,20 @@ body{
     align-items: center;
     text-align: center;
     width: 35%;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .right-box{
-    margin-top: 20%;
-    justify-content: center;
-    align-items: center;
+    margin-top: 16%;
     width: 60%;
     text-align: center;
 }
 
 .name{
-    margin: 60px;
+    margin: 50px 10px 50px 10px;
     font-family: Roboto;
     font-style: Light;
-    font-size: 30px;
+    font-size: 40px;
     text-align: center;
     color: white;
 }
@@ -40,46 +38,41 @@ body{
     width: 228px;
     height: 228px;
     background-image: url(./img/27867770_1746012032127377_1332655718833146407_n.jpg);
-    align-items: center;
-    justify-content: center;
     border-radius: 119px;
     display: inline-block;
 }
 
 .title{
-    margin: 0 0 24px 0;
-    font-family: roboto;
-    font-style: italic;
+    margin: 0 100px 0 100px;
+    font-family: Roboto;
+    font-weight: 100;
     font-size: 72px;
     text-align: center;
     color: black;
 }
 
 .text-lorem{
-    margin: 0 20px 0 20px;
+    margin: 0 100px 20px 60px;
     font-family: Roboto;
-    font-style: light;
-    font-size: mixed;
-    text-align: center;
+    font-size: 18px;
+    font-weight: 100;
+    text-align: left;
     color: white;
 }
 
 .button{
-    margin: 100px;
-    font-family: roboto;
-    font-weight: 200;
+    padding: 0px;
+    margin: 170px 0 50px 0;
+    font-family: Roboto;
     font-size: 22px;
     text-align: center;
     color: white;
-    align-items: center;
-    justify-content: center;
     background-color: black;
-    opacity: 80%;
     border-radius: 20px;
     width: 205px;
     height: 50px;
-    border: none;
     display: inline-block;
+    border: black;
 }
 
 .button:hover{
@@ -94,18 +87,17 @@ body{
 .nav-item{
     display: flex;
     justify-content: center;
-    align-items: center;
     margin: 0 10px;
-    width: 69px;
-    height: 69px;
+    align-items: center;
+    width: 70px;
+    height: 70px;
     border-radius: 100%;
     background-color: black;
 }
 
 .nav-item a{
-    font-size: 40px;
+    font-size: 30px;
     color: white;
-
 }
 .nav-item:hover{
     cursor: pointer;
