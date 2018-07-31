@@ -1,134 +1,143 @@
-body{
-    margin: 0;
-    padding: 0;
+body {
+  margin: 0;
+  padding: 0;
 }
 
-.wrapper{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    background-image: url(./img/samuel-zeller-242172-unsplash.jpg);
-    background-size: cover;
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-image: url(./img/samuel-zeller-242172-unsplash.jpg);
+  background-size: cover;
 }
 
-.left-box{
-    animation: show 1s ease-in-out 0.5s forwards;
+.left-box {
+  animation: show 1s ease-in-out 0.5s forwards;
+  opacity: 0;
+  text-align: center;
+  width: 410px;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-size: cover;
+}
+
+.right-box {
+  margin-top: 5%;
+  display: inline-block;
+  animation: show 1.5s ease-in-out 1.2s forwards;
+  opacity: 0;
+  width: 70%;
+  text-align: center;
+}
+
+.name {
+  margin: 50px 10px 50px 10px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 100;
+  font-size: 40px;
+  text-align: center;
+  color: white;
+}
+
+.picture {
+  margin-top: 30%;
+  height: 180px;
+  width: 180px;
+  background-image: url(./img/27867770_1746012032127377_1332655718833146407_n.jpg);
+  border-radius: 50%;
+  background-size: solid;
+  display: inline-block;
+  border: solid white;
+}
+
+.title {
+  font-family: 'StarWars';
+  font-size: 70px;
+  text-align: center;
+  color: black;
+}
+
+.text {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 100;
+  color: white;
+  text-align: left;
+  margin-left: 10%;
+  font-size: 20px;
+}
+
+.button {
+  transition: all 0.3s ease-in-out;
+  margin-top: 15%;
+  margin-bottom: 5%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 100;
+  font-size: 22px;
+  text-align: center;
+  color: white;
+  background-color: black;
+  border-radius: 20px;
+  width: 205px;
+  height: 50px;
+  display: inline-block;
+  border: black;
+}
+
+.button a {
+  display: block;
+}
+
+.button:hover {
+  background-color: yellow;
+}
+
+.button a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-item {
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  margin: 0 10px;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  background-color: black;
+}
+
+.nav-item a {
+  font-size: 25px;
+  color: white;
+  text-decoration: none;
+}
+.nav-item:hover {
+  cursor: pointer;
+  background-color: yellow;
+}
+
+@keyframes show {
+  0% {
+    transform: translate(0, -50px);
     opacity: 0;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 410px;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    background-size: cover;
+  }
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
 }
 
-.right-box{
-    animation: show 1.5s ease-in-out 1.2s forwards;
-    opacity: 0;
-    width: 60%;
-    text-align: center;
-}
-
-.name{
-    margin: 50px 10px 50px 10px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 100;
-    font-size: 40px;
-    text-align: center;
-    color: white;
-}
-
-.picture{
-    margin-top: 25%;
-    height: 228px;
-    width: 228px;
-    background-image: url(./img/27867770_1746012032127377_1332655718833146407_n.jpg);
-    border-radius: 100%;
-    background-size: solid;
-    display: inline-block;
-    border: solid white;
-}
-
-.title{
-    margin-top: 14%;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 100;
-    font-size: 80px;
-    text-align: center;
-    color: black;
-}
-
-.text-lorem{
-    margin-left: 20%;
-    margin-right: 30%;
-    margin-top: 15%;
-    margin-bottom: 30%;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 100;
-    font-weight: 100;
-    text-align: left;
-    color: white;
-}
-
-.button{
-    margin-top: 15%;
-    margin-bottom: 5%;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 100;
-    font-size: 22px;
-    text-align: center;
-    color: white;
-    background-color: black;
-    border-radius: 20px;
-    width: 205px;
-    height: 50px;
-    display: inline-block;
-    border: black;
-}
-
-.button:hover{
-    background-color: yellow;
-}
-
-.button a{
-    color: white;
-    text-decoration: none;
-}
-
-.nav{
-    display: flex;
-    justify-content: center;
-}
-
-.nav-item{
-    transition: all 0.3s ease-in-out;
-    display: flex;
-    justify-content: center;
-    margin: 0 10px;
-    align-items: center;
-    width: 70px;
-    height: 70px;
-    border-radius: 100%;
-    background-color: black;
-}
-
-.nav-item a{
-    font-size: 30px;
-    color: white;
-}
-.nav-item:hover{
-    cursor: pointer;
-    background-color: yellow;
-}
-
-@keyframes show{
-    0%{
-        transform: translate(0,-50px);
-        opacity: 0;
-    }
-    100%{
-        transform: translate(0);
-        opacity: 1;
-    }
+@font-face {
+  font-family: 'StarWars';
+  src: url("./fonts/star_jedi/starjout/Starjout.ttf");
 }
